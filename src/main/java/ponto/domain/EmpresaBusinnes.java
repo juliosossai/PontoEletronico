@@ -56,4 +56,9 @@ public class EmpresaBusinnes {
 
 
     }
+
+    public Empresa procuraDados(String chave) {
+        EmpresaDao dao = new EmpresaDao();
+        return dao.search(chave);
+    }
 }
